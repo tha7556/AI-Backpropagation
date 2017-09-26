@@ -280,11 +280,7 @@ public class Network implements Serializable{
 		double targetError = .000000000001;
 		double av = 0.0;
 		Network n = new Network(2,1,2);
-			for(int i = 0; i < 5; i++) {
-				n = new Network(2,1,15);
-				av += n.train(trainingSetInputs,trainingSetOutputs, targetError);
-			}
-			System.out.println(av /10.0);
+		n.train(trainingSetInputs, trainingSetOutputs, targetError);
 		//n.saveNetwork("E:\\\\ComputerScience\\\\Workspace\\\\Ai Project1\\\\CombinedLogicNetwork.ntwrk");
 		//n.loadNetwork("E:\\\\\\\\ComputerScience\\\\\\\\Workspace\\\\\\\\\\\\\\\\Ai Project1\\\\\\\\\\\\\\\\CombinedLogicNetwork.ntwrk");
 		
