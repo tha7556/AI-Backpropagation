@@ -277,12 +277,12 @@ public class Network implements Serializable{
 		//double[][] trainingSetOutputs = {{.1},{.9},{.9},{.9}}; //OR
 		//double[][] trainingSetOutputs = {{.1,.1,.1},{.9,.1,.9},{.9,.1,.9},{.1,.9,.9}}; //All 3
 	
-		double targetError = .000000000001;
+		double targetError = .000000000000001;
 		double av = 0.0;
 		Network n = new Network(2,1,2);
 		n.train(trainingSetInputs, trainingSetOutputs, targetError);
-		//n.saveNetwork("E:\\\\ComputerScience\\\\Workspace\\\\Ai Project1\\\\CombinedLogicNetwork.ntwrk");
-		//n.loadNetwork("E:\\\\\\\\ComputerScience\\\\\\\\Workspace\\\\\\\\\\\\\\\\Ai Project1\\\\\\\\\\\\\\\\CombinedLogicNetwork.ntwrk");
+		n.saveNetwork("E:\\ComputerScience\\Github\\Ai-Backpropagation\\Data\\ANDNetwork.ntwrk");
+		n.loadNetwork("E:\\ComputerScience\\Github\\Ai-Backpropagation\\Data\\ANDNetwork.ntwrk");
 		
 		
 		//Testing
